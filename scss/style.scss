@@ -358,13 +358,10 @@ section {
 
 // page-content
 .section01 {
-  .title01 {
-    margin-bottom: 3rem;
-
-    h1 {
-      font-size: 34px;
-    }
+  h1 {
+    font-size: 34px;
   }
+
   .row {
     width: 100%;
   }
@@ -404,7 +401,7 @@ section {
       justify-content: center;
       align-items: center;
       // 每個 step 的距離
-      margin-top: -35px;
+      margin-top: 25px;
       // icon 跟 文字間格
       margin-bottom: 20px;
       border-radius: 10px;
@@ -425,10 +422,6 @@ section {
         color: rgba(var(--max-danger-rgb), var(--border-opacity));
       }
     }
-  }
-
-  .pre-work-step:hover {
-    padding-bottom: 5px;
   }
 }
 
@@ -452,13 +445,17 @@ section {
     margin-top: 0 !important;
   }
 
-  // 大標
+  // banner & products ------------------------
   #banner {
     h1 {
       font-size: 65px;
       line-height: 85px;
     }
     .col1 {
+      .row {
+        justify-content: start;
+      }
+
       .col {
         width: 48% !important;
       }
@@ -472,10 +469,24 @@ section {
     margin: 5px calc(var(--gutter-x) * 2.5);
   }
 
+  // banner & products ------------------------
   #banner {
     .col1 {
       .col {
         width: 31.333% !important;
+      }
+    }
+  }
+
+  // section01 -----------------------
+  .section01 {
+    .row2 {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .col {
+        width: 50%;
       }
     }
   }
@@ -516,6 +527,17 @@ section {
 
     .col2 {
       width: 30%;
+    }
+  }
+
+  // section01 -------------------
+  .section01 {
+    .row2 {
+      flex-wrap: nowrap;
+
+      .col {
+        width: 25%;
+      }
     }
   }
 }
