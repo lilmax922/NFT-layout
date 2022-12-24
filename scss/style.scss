@@ -40,7 +40,7 @@ h2 {
 }
 
 section {
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 #page-wrap {
@@ -193,15 +193,15 @@ section {
       }
     }
   }
+}
 
-  // Product Start-----------------
-  .col2 {
-    width: 100%;
-    display: flex;
+// Product-box Start -----------------
+.product-col {
+  width: 100%;
+  display: flex;
 
-    img {
-      max-width: 100%;
-    }
+  img {
+    max-width: 100%;
   }
 
   .product-item {
@@ -355,13 +355,16 @@ section {
     }
   }
 }
+// Product-box end -----------------
 
 // page-content
-.section01 {
+#page-content {
   h1 {
     font-size: 34px;
   }
+}
 
+#section01 {
   .row {
     width: 100%;
   }
@@ -423,8 +426,38 @@ section {
       }
     }
   }
+
+  .pre-work-step:hover {
+    box-shadow: 0 10px 25px 5px rgb(30 80 255 / 10%);
+    transform: translateY(-2px);
+  }
 }
 
+#section02 {
+  .title {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .col:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    background: var(--bg-dark);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: var(--primary-hover);
+  }
+}
 // 576 以上 -------------------------
 @media (min-width: 576px) {
   .container {
@@ -488,6 +521,14 @@ section {
       .col {
         width: 50%;
       }
+    }
+  }
+
+  // section02 -----------------------
+  .section02 {
+    .product-col {
+      width: 30%;
+      display: inline-block !important;
     }
   }
 }
