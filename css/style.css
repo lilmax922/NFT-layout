@@ -485,29 +485,46 @@ button:hover {
 }
 
 #section03 .collection-col {
-  height: 250px;
   border: 1px solid white;
   border-radius: 10px;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   margin: 0 1rem;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #section03 .collection-col img {
   max-width: 100%;
   border-radius: 10px;
 }
 #section03 .collection-img {
-  height: 70%;
+  height: 50%;
 }
 #section03 .collection-author {
-  height: 30%;
-  padding: 0 3rem;
   text-align: center;
-  margin-top: -1.5rem;
-  background: red;
-  z-index: 5;
 }
-#section03 small {
+#section03 .collection-author img {
+  width: 75px;
+  height: 75px;
+  border: 5px solid var(--bg-dark);
+  margin-top: -1.5rem;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#section03 .collection-author a {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+}
+#section03 .collection-author small {
+  color: var(--text-color);
   font-style: italic;
   font-size: 0.875em;
 }
