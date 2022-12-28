@@ -468,11 +468,13 @@ button:hover {
 }
 
 #section02 .row:nth-child(1),
-#section03 .row:nth-child(1) {
+#section03 .row:nth-child(1),
+#section04 .row:nth-child(1) {
   margin-bottom: 3rem;
 }
 #section02 .col:nth-child(1),
-#section03 .col:nth-child(1) {
+#section03 .col:nth-child(1),
+#section04 .col:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

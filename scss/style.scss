@@ -457,8 +457,10 @@ button:hover {
   }
 }
 
+// section 標題和輪播圖按鈕的設定
 #section02,
-#section03 {
+#section03,
+#section04 {
   .row:nth-child(1) {
     margin-bottom: 3rem;
   }
