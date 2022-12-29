@@ -460,7 +460,8 @@ button:hover {
 // section 標題和輪播圖按鈕的設定
 #section02,
 #section03,
-#section04 {
+#section04,
+#section05 {
   .row:nth-child(1) {
     margin-bottom: 3rem;
   }
@@ -514,6 +515,83 @@ button:hover {
       color: var(--text-color);
       font-style: italic;
       font-size: 0.875em;
+    }
+  }
+}
+
+#section05 {
+  .row {
+    width: 100%;
+  }
+
+  .seller {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed var(--box-border-rgb);
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 2.5rem;
+
+    .info-img-desc {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      img {
+        width: 75px;
+        height: 75px;
+        border: 1px solid var(--box-border-rgb);
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      i::before {
+        font-size: 18px;
+        color: var(--primary-hover);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        position: absolute;
+        left: -3px;
+        top: 73%;
+      }
+    }
+
+    .info-desc {
+      margin-left: 15px;
+      a {
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: var(--primary-hover);
+      }
+      small {
+        color: var(--text-color);
+        font-size: 0.875em;
+      }
+    }
+
+    .info-rank {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: var(--primary);
+        color: var(--white);
+        border-radius: 50%;
+      }
     }
   }
 }
@@ -631,6 +709,18 @@ button:hover {
       .col {
         width: 25%;
       }
+    }
+  }
+
+  #section05 {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .seller {
+      width: 31.333%;
+      margin: 0 0.5rem;
     }
   }
 }
