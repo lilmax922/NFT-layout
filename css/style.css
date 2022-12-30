@@ -646,7 +646,7 @@ button:hover {
           justify-content: center;
   gap: 1.5rem;
 }
-#section06 .join-desc {
+#section06 p {
   color: var(--text-color);
 }
 #section06 .join-img {
@@ -677,6 +677,73 @@ button:hover {
   border-radius: 10px;
   -webkit-filter: drop-shadow(3px 3px 10px var(--text-color));
           filter: drop-shadow(3px 3px 10px var(--text-color));
+}
+
+footer {
+  padding-top: 80px;
+}
+footer p {
+  color: var(--text-color);
+}
+footer p:hover {
+  color: var(--primary-hover);
+  padding-left: 0.5rem;
+}
+footer .footer-desc {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+footer .row {
+  margin-bottom: 55px;
+}
+footer .col {
+  padding: 5px 0;
+}
+footer h3 {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 32px;
+}
+footer .footer-intouch .col + .col {
+  margin-top: 1rem;
+}
+footer .footer-intouch i {
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--primary);
+}
+footer .footer-intouch span {
+  padding-left: 0.5rem;
+  color: var(--text-color);
+}
+footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+footer .footer-bottom .row {
+  margin-top: 55px;
+}
+footer .footer-bottom div {
+  color: var(--text-color);
+}
+footer .footer-bottom span {
+  color: var(--white);
+  text-decoration: underline;
+  font-weight: bold;
+}
+footer .footer-bottom a ~ a {
+  margin-left: 0.5rem;
+}
+footer .footer-bottom i {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--box-border-rgb);
+  color: var(--white);
+}
+footer .footer-bottom i:hover {
+  background: var(--primary-hover);
 }
 
 @media (min-width: 576px) {

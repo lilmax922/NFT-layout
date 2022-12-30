@@ -610,7 +610,7 @@ button:hover {
     gap: 1.5rem;
   }
 
-  .join-desc {
+  p {
     color: var(--text-color);
   }
 
@@ -638,6 +638,92 @@ button:hover {
   img {
     border-radius: 10px;
     filter: drop-shadow(3px 3px 10px var(--text-color));
+  }
+}
+
+footer {
+  padding-top: 80px;
+
+  p {
+    color: var(--text-color);
+  }
+
+  p:hover {
+    color: var(--primary-hover);
+    padding-left: 0.5rem;
+  }
+
+  .footer-desc {
+    margin-top: 1rem;
+    color: var(--text-color);
+  }
+
+  .row {
+    margin-bottom: 55px;
+  }
+
+  .col {
+    padding: 5px 0;
+  }
+
+  h3 {
+    color: var(--white);
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 32px;
+  }
+
+  .footer-intouch {
+    .col + .col {
+      margin-top: 1rem;
+    }
+
+    i {
+      padding: 10px;
+      border-radius: 10px;
+      background: var(--primary);
+    }
+
+    span {
+      padding-left: 0.5rem;
+      color: var(--text-color);
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    .row {
+      margin-top: 55px;
+    }
+
+    div {
+      color: var(--text-color);
+      // font-size: 15px;
+    }
+
+    span {
+      color: var(--white);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a ~ a {
+      margin-left: 0.5rem;
+    }
+
+    i {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--box-border-rgb);
+      color: var(--white);
+    }
+
+    i:hover {
+      background: var(--primary-hover);
+    }
   }
 }
 
@@ -677,6 +763,8 @@ button:hover {
       }
     }
   }
+
+  // footer ---------------------------
 }
 
 // 768 以上 -------------------------
