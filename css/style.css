@@ -682,6 +682,9 @@ button:hover {
 footer {
   padding-top: 80px;
 }
+footer a {
+  display: inline-block;
+}
 footer p {
   color: var(--text-color);
 }
@@ -718,6 +721,10 @@ footer .footer-intouch i {
 footer .footer-intouch span {
   padding-left: 0.5rem;
   color: var(--text-color);
+}
+footer .footer-intouch .contact-info:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }
 footer .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -774,6 +781,17 @@ footer .footer-bottom i:hover {
   }
   #banner .col1 .col {
     width: 48% !important;
+  }
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-content .footer-marketplace,
+.footer-content .footer-company {
+    width: 50%;
   }
 }
 @media (min-width: 768px) {
@@ -857,5 +875,16 @@ footer .footer-bottom i:hover {
   }
   #section06 .row {
     width: 48%;
+  }
+  .footer-middle .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-title {
+    width: 22%;
+  }
+  .footer-content {
+    width: 72%;
   }
 }

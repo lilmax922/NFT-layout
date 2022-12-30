@@ -644,6 +644,10 @@ button:hover {
 footer {
   padding-top: 80px;
 
+  a {
+    display: inline-block;
+  }
+
   p {
     color: var(--text-color);
   }
@@ -689,6 +693,11 @@ footer {
     span {
       padding-left: 0.5rem;
       color: var(--text-color);
+    }
+
+    .contact-info:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
     }
   }
 
@@ -765,6 +774,15 @@ footer {
   }
 
   // footer ---------------------------
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-marketplace,
+    .footer-company {
+      width: 50%;
+    }
+  }
 }
 
 // 768 以上 -------------------------
@@ -867,6 +885,19 @@ footer {
     .row {
       width: 48%;
     }
+  }
+
+  // footer -----------------------
+  .footer-middle {
+    .container {
+      display: flex;
+    }
+  }
+  .footer-title {
+    width: 22%;
+  }
+  .footer-content {
+    width: 72%;
   }
 }
 
