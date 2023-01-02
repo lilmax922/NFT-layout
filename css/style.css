@@ -508,7 +508,6 @@ button:hover {
 }
 
 #section03 .collection-col {
-  border: 1px solid white;
   border-radius: 10px;
   padding-bottom: 1rem;
   margin: 0 1rem;
@@ -598,8 +597,8 @@ button:hover {
 }
 #section05 .seller .info-desc a {
   color: var(--white);
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
 }
 #section05 .seller .info-desc a:hover {
   color: var(--primary-hover);
