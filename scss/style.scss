@@ -56,6 +56,56 @@ small {
   font-size: 14px;
 }
 
+// rgb 的字 start -----------------------
+.text-gradient {
+  text-align: center;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 10s infinite linear;
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(-360deg);
+  }
+}
+// rgb 的字 end -----------------------
+
+// 產品 hover 效果 start -----------------------
+.product-item:hover:before {
+  opacity: 0.3;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.product-item:before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: -50%;
+  left: -50%;
+  z-index: -9;
+  display: block;
+  height: 200%;
+  width: 200%;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  background: linear-gradient(to right, var(--bg-dark-3) 20%, var(--bg-dark-3) 40%, var(--primary) 50%, var(--primary) 55%, var(--bg-dark-3) 70%, var(--bg-dark-3) 100%);
+  filter: blur(10px);
+  background-size: 200% auto;
+  opacity: 0;
+}
+// 產品 hover 效果 end -----------------------
+
 #page-wrap {
   overflow: hidden;
 }
@@ -74,6 +124,7 @@ small {
   }
 
   .product-item {
+    position: relative;
     width: 100%;
     border-radius: 10px;
     padding: 20px;
@@ -92,6 +143,10 @@ small {
       text-decoration: none;
       color: var(--white);
     }
+  }
+
+  .product-title a:hover {
+    color: var(--primary-hover);
   }
 
   .product-img {
@@ -351,6 +406,7 @@ button:hover {
   h1 {
     font-size: 50px;
     line-height: 70px;
+    font-weight: 400;
     margin-bottom: 1.5rem;
   }
 
@@ -860,6 +916,11 @@ footer {
 
   // banner & products ------------------------
   #banner {
+    h1 {
+      font-size: 70px;
+      line-height: 90px;
+    }
+
     .row {
       flex-direction: row;
       justify-content: space-between;
@@ -932,6 +993,20 @@ footer {
 
     .social-icons {
       justify-content: end;
+    }
+  }
+}
+
+// 1200 以上 -------------------------
+@media (min-width: 1200px) {
+  .container {
+    margin: 5px calc(var(--gutter-x) * 7);
+  }
+
+  #banner {
+    h1 {
+      font-size: 80px;
+      line-height: 100px;
     }
   }
 }
